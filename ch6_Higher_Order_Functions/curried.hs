@@ -21,3 +21,15 @@ either 4 or the input parameter, depending on which is bigger -}
 compareWithHundred = compare 100
 multWithFour :: (Num a) => a -> a
 multWithFour = (4 *)  -- use parantheses for infix functions
+
+{-
+note: there is no good repr for functions in terminal/GHCI
+because functions are not part of the `Show` typeclass
+-}
+
+-- demonstration with lambda functions
+-- these expressions are equivalent:
+addThree :: (Num a) => a -> a -> a -> A
+addThree x y z = x + y + z
+addThree' = \x -> \y -> \z -> x + y + z
+
