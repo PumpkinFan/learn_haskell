@@ -29,7 +29,7 @@ because functions are not part of the `Show` typeclass
 
 -- demonstration with lambda functions
 -- these expressions are equivalent:
-addThree :: (Num a) => a -> a -> a -> A
+addThree :: (Num a) => a -> a -> a -> a
 addThree x y z = x + y + z
 addThree' = \x -> \y -> \z -> x + y + z
 
