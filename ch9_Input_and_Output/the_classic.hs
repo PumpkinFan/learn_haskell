@@ -1,7 +1,7 @@
 main = putStrLn "hello world!"
 
 {-
-note the type for `putStrLn`
+note the type signature for `putStrLn`
 ghci> :t putStrLn  
 putStrLn :: String -> IO () 
 
